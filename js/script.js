@@ -66,3 +66,21 @@ btn.addEventListener('click', function(){
   cards[visible_element].classList.remove('d-none');
 })
 
+// recupero il mio pulsante dal dom
+const button = document.getElementById('priviusly');
+button.addEventListener('click', function(){
+    // prima di cliccare su indietro aggiungo la classe d-none
+    cards[visible_element].classList.add('d-none');
+  
+   // creo una condizione che mi fa ritornare di nuovo all'ultima immagine
+    if (visible_element == images.length -1){
+         visible_element = 5;
+    }
+     else {
+         // decremento di uno alla volta
+         visible_element--;
+    }
+
+   // rimuovo la classe d-none
+  cards[visible_element].classList.remove('d-none');
+})
