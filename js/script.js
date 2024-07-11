@@ -47,3 +47,22 @@ const cards = document.querySelectorAll('.card');
 // seleziono il primo elemento del mio arrey e lo rendo visibile togliendo la calsse d-none
 cards[visible_element].classList.remove('d-none');
 
+// recupero il mio pulsante dal dom
+const btn = document.getElementById('next');
+btn.addEventListener('click', function(){
+    // prima di cliccare su avanti aggiungo la classe d-none
+    cards[visible_element].classList.add('d-none');
+  
+   // creo una condizione che mi fa ritornare di nuovo alla prima immagine
+    if (visible_element == images.length -1){
+         visible_element = 0;
+    }
+     else {
+         // aumento di uno alla volta
+         visible_element++;
+    }
+
+   // rimuovo la classe d-none
+  cards[visible_element].classList.remove('d-none');
+})
+
