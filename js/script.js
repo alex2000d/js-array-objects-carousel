@@ -40,3 +40,10 @@ images.forEach((element) =>{
           </div>`
 });
 
+// dichiaro una variabile per l'immagine che voglio rendere visibile
+let visible_element = 0;
+// recupero le mie card
+const cards = document.querySelectorAll('.card');
+// seleziono il primo elemento del mio arrey e lo rendo visibile togliendo la calsse d-none
+cards[visible_element].classList.remove('d-none');
+
