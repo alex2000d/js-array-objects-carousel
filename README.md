@@ -44,3 +44,18 @@ Aggiungere funzionalità di autoplay: dopo un certo periodo di tempo (3 secondi)
 *BONUS 3:*
 Aggiungere bottoni di start/stop e di inversione del meccanismo di autoplay.
 Buon lavoro! :faccia_leggermente_sorridente:
+
+solution
+1-creo la mia struttura dati
+2-creo il mio arrey di oggetti
+3-recupero il mio elemento dal dom
+4-creo un ciclo che mi stampi i  miei personaggi nel dom
+5-dichiaro una variabile per l'immagine che voglio rendere visibile
+6- recupero le mie card
+7-seleziono il primo elemento del mio arrey e lo rendo visibile togliendo la calsse d-none
+8-recupero il mio pulsante dal dom
+9-prima di cliccare su avanti aggiungo la classe d-none
+10-creo una condizione che mi fa ritornare di nuovo alla prima immaginecreo una condizione che mi fa ritornare di nuovo alla prima immagine
+11-aumento di uno alla volta
+12-rimuovo la classe d-none
+
