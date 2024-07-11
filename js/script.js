@@ -31,7 +31,7 @@ const images = [
 let container_card = document.getElementById('container');
 // creo un ciclo che mi stampi i  miei personaggi nel dom
 images.forEach((element) =>{
-    container_card.innerHTML += ` <div class="card my-5">
+    container_card.innerHTML += ` <div class="card my-4 d-none">
             <img src="${element.image}" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">${element.title}</h5>
@@ -40,8 +40,3 @@ images.forEach((element) =>{
           </div>`
 });
 
-// dichiaro una variabile per l'immagine che voglio rendere visibile
-let visible_element = 0;
-
-// recupero le mie card
-const cards = document.querySelectorAll('.card');
