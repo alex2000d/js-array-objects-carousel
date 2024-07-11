@@ -5,7 +5,8 @@
 }
 
 .card img{
-    height: 500px;
+   height: 500px;
+    object-fit: cover;
 }
 
 .container{
