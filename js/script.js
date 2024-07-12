@@ -73,8 +73,8 @@ button.addEventListener('click', function(){
     cards[visible_element].classList.add('d-none');
   
    // creo una condizione che mi fa ritornare di nuovo all'ultima immagine
-    if (visible_element == images.length -1){
-         visible_element = 5;
+    if (visible_element == 0){
+         visible_element = images.length -1
     }
      else {
          // decremento di uno alla volta
